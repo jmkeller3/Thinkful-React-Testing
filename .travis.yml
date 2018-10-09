@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: TJp4lznov9M4KOQ6T3g89wXnxow68tzrxMvUTjJ68r5NmS2ZdOaK0vV+faIfGJybjSe4/5YAo1ARQoBvVQwqhbq+qwVa6dQRAfTF1Tj3RXOpmqgtSNIq+USnf8p/YutvOAycKmdvWxzp36YIun44jSRp7sxh90fPYv+t5cKFbZy1k6imG+5muxLgnF1yAj1p3nLXrezJm4wMaULjnVkeaDSViRQ8i71wcCVHisZtpXmTZsyF2cSGf8F6isevtc3ORXHsEa6fkDemwY8++ITlZa0T2MBNo6pSxC7dibWRR1IvxC18RybDo4lnx7kyobwCsqtT+bqgHSI+PXdzo03767x2bHkatDmBrfOpvfvP7u+NOBczh7AywclSdP/c9L422/M8oXEiR/WKDx40/eQiUFZLjxvTnng/ERwJ4t3mtxtCWAwnJ0eUGyamOKPKq11gFSTjiIAS4boMap4RRlbViQ+j6ibyeeGQ9l71ejomqCogjj4mWqLrKuWFf7u1OHzOz64YpcSXHCwP4xeohiXW9UBx+UCzzsGbZR9Ng8j+HC6SkYjmNX1Yq6QuQUUh1gUKeA1e9p/4KiiytYSQDfl2v71ULSE5F9zMP3RJ9DXq7NvUrr7FaegU+3mPv45YJ4dVnOH+XPeBwxxi3f5QfLT7s14TTCnS/0crYCCH+nuFt9I=
+  app: Thinkful-React-Testing
+  on:
+    repo: jmkeller3/Thinkful-React-Testing
